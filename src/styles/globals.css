@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define CSS Variables */
+:root {
+  /* Core Colors */
+  --bg-main: #0b0b0f;
+  --bg-card: #14141c;
+  --white: #ffffff;
+  --primary: #6320ee;
+  --primary-glow: #a855f7;
+  --text-muted: #94a3b8;
+
+  /* Typography */
+  --font-family: "Inter", sans-serif;
+  --font-family-display: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+
+  /* Spacing & Radius */
+  --radius-sm: 6px;
+  --shadow-md: 0 4px 20px rgba(99, 32, 238, 0.3);
+}
+
+/* Dark mode overrides */
+.dark {
+  --bg-main: #0b0b0f;
+  --bg-card: #14141c;
+  --white: #ffffff;
+  --primary: #6320ee;
+  --primary-glow: #a855f7;
+  --text-muted: #94a3b8;
+}
+
+/* Base styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--white);
+}
+
+/* Utility classes for text */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-semibold {
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Smooth scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-glow);
+}
