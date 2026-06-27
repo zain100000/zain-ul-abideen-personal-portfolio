@@ -13,13 +13,7 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
-  const [isDark, setIsDark] = useState(true); // Default to dark mode
-
-  // Toggle dark mode function (optional - you can add a toggle button)
-  const toggleDarkMode = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
-  };
+  const [isDark, setIsDark] = useState(true);
 
   // Set initial dark mode
   useEffect(() => {
