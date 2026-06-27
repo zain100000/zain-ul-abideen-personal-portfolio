@@ -180,33 +180,10 @@ const Skills = () => {
           text="MY SKILLS"
           className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-yellow-300 tracking-[-1px] sm:tracking-[-2px] mt-8 sm:mt-10 text-center"
         />
-        <p className="text-sm sm:text-lg md:text-xl text-white/80 mb-4 sm:mb-6">
-          Summoned with Dragon Balls
-        </p>
 
         {/* Dragon Balls Container - Responsive height */}
         <div className="relative w-full max-w-5xl aspect-square md:aspect-[4/3] flex-1 max-h-[55vh] sm:max-h-[60vh] md:max-h-[65vh]">
           {/* Center Shenron text - smaller on mobile */}
-          <motion.div
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-20"
-            initial={{ scale: 0, opacity: 0 }}
-            animate={
-              isInView
-                ? {
-                    scale: [0, 1.2, 1],
-                    opacity: 1,
-                    transition: { duration: 0.8, delay: 0.2 },
-                  }
-                : {}
-            }
-          >
-            <div className="text-amber-400 text-[8px] sm:text-xs md:text-sm tracking-[2px] sm:tracking-[4px] font-bold animate-pulse">
-              ETERNAL DRAGON
-            </div>
-            <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-black text-white drop-shadow-[0_0_20px_rgba(255,165,0,0.5)]">
-              SHENRON
-            </div>
-          </motion.div>
 
           {/* Render all Dragon Balls */}
           {balls.map((ball, idx) => (

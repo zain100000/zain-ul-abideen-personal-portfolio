@@ -340,17 +340,7 @@ export default function Projects() {
       <main className="min-h-screen bg-[#0b0b0f] text-light overflow-hidden relative">
         <Layout className="pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-24 relative z-10 px-3 sm:px-4 md:px-6">
           {/* Header Section with Anime Vibe */}
-          <div className="max-w-5xl mx-auto text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20 pt-4 sm:pt-6 md:pt-8">
-            <motion.div
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
-              className="inline-block p-3 sm:p-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full mb-4 sm:mb-6 relative"
-            >
-              <span className="text-3xl sm:text-4xl md:text-5xl">⚔️</span>
-              {/* Glow ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-purple-500/30 animate-ping opacity-50" />
-            </motion.div>
+          <div className="max-w-5xl mx-auto text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20 pt-4 sm:pt-6 md:pt-8 mt-10">
             <AnimatedText
               text="Code That Speaks"
               className="!text-3xl sm:!text-4xl md:!text-6xl lg:!text-7xl xl:!text-8xl font-black tracking-[-1px] sm:tracking-[-2px] mb-3 sm:mb-4 px-2"
@@ -378,7 +368,7 @@ export default function Projects() {
                 icon="📝"
                 img={NovaNotes}
                 title="Nova Notes"
-                summary="A high-performance, fully offline-capable mobile application dedicated to local task management and daily note organization. Features client-side state management with Redux Toolkit, preventing unneeded UI rerenders with predictable data flow. Custom lightweight UI components that operate independently of network connection. Published on Google Play Store with thousands of active users."
+                summary="A high-performance, fully offline-capable mobile application dedicated to local task management and daily note organization. Features client-side state management with Redux Toolkit, preventing unneeded UI rerenders with predictable data flow. Custom lightweight UI components that operate independently of network connection. Published on Google Play Store."
                 github="https://github.com/zain100000/NovaNotes"
                 link="https://play.google.com/store/apps/details?id=com.novanotes"
                 date="2026"
