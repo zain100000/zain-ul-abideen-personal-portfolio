@@ -212,10 +212,7 @@ const Experience = () => {
             companyLink="https://www.linkedin.com/company/techup-ai/"
             time="June 2024 - August 2024"
             address="Rawalpindi, Pakistan | On-Site"
-            work={`Enhanced digital accessibility and cross-browser compatibility by deploying 100% responsive user interfaces using React.js for full-stack web applications.
-            Boosted application stability and backend performance under simulated traffic by developing, testing, and maintaining secure server-side REST APIs with Node.js and Express.js.
-            Minimized technical debt by architecting clean, reusable frontend components, facilitating easier feature scalability for the core engineering team.
-            Maximized data integrity by managing structured schema integrations within MongoDB databases to support dynamic application features`}
+            work="Enhanced digital accessibility and cross-browser compatibility by deploying 100% responsive user interfaces using React.js for full-stack web applications. Boosted application stability and backend performance under simulated traffic by developing, testing, and maintaining secure server-side REST APIs with Node.js and Express.js. Minimized technical debt by architecting clean, reusable frontend components, facilitating easier feature scalability for the core engineering team. Maximized data integrity by managing structured schema integrations within MongoDB databases to support dynamic application features."
             character={Light}
             color="red"
           />

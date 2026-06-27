@@ -96,7 +96,7 @@ const FeaturedProject = ({
 
       {/* Anime Quote - Floating text (hidden on mobile) */}
       <div className="hidden sm:block absolute -top-3 left-8 text-[8px] sm:text-[10px] text-purple-400/40 font-light italic tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        "Code is my weapon"
+        &quot;Code is my weapon&quot;
       </div>
 
       {/* Character Avatar */}
@@ -465,7 +465,7 @@ export default function Projects() {
                   💻 Every project is a learning journey —
                   <span className="text-purple-400 font-semibold">
                     {" "}
-                    Let's build something legendary together
+                    Let&apos;s build something legendary together
                   </span>
                 </span>
               </div>

@@ -89,7 +89,7 @@ const NotFound = () => {
               }}
             >
               This coordinates sector has been erased entirely by the absolute
-              beauty of a God's power. Retreat back through the spatial rift
+              beauty of a God power. Retreat back through the spatial rift
               safely.
             </p>
 

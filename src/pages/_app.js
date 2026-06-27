@@ -15,6 +15,12 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [isDark, setIsDark] = useState(true);
 
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark");
+    }
+  }, [isDark]);
+
   // Set initial dark mode
   useEffect(() => {
     if (isDark) {
