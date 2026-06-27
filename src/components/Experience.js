@@ -228,14 +228,14 @@ const Experience = () => {
       >
         <div
           className="inline-block px-4 sm:px-6 md:px-8 py-3 sm:py-4 
-          bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full 
-          border border-purple-500/20"
+    bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full 
+    border border-purple-500/20"
         >
           <span className="text-xs sm:text-sm md:text-base text-neutral-400">
             🚀 Every experience shapes the journey —
             <span className="text-purple-400 font-semibold">
               {" "}
-              Let's build something legendary together
+              {"Let's build something legendary together"}
             </span>
           </span>
         </div>

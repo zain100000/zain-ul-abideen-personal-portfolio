@@ -15,18 +15,14 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [isDark, setIsDark] = useState(true);
 
+  // Sync dark mode configuration safely
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
-
-  // Set initial dark mode
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
 
   return (
     <>
