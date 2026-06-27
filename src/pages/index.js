@@ -73,7 +73,7 @@ export default function Home() {
                   </Link>
 
                   <Link
-                    href="mailto:zabideen639@gmail.com"
+                    href="/contact"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base font-medium tracking-wide text-white border border-white/20 hover:border-white/50 rounded-xl transition-all hover:bg-white/5 w-full sm:w-auto"
                   >
                     Contact Me

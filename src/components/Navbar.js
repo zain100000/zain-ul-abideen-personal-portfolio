@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Logo from "../../public/images/logo.png";
-import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./Icons";
+import { FacebookIcon, GithubIcon, InstagramIcon, LinkedInIcon } from "./Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -161,6 +161,16 @@ const Navbar = () => {
           aria-label="LinkedIn"
         >
           <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          target="_blank"
+          className="w-6 h-6 text-textMuted hover:text-primary transition-colors duration-300"
+          href="https://www.github.com/zain100000"
+          whileHover={{ y: -2, scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          aria-label="GitHub"
+        >
+          <GithubIcon />
         </motion.a>
       </div>
 
