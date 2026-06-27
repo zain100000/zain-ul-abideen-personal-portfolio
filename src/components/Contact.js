@@ -35,32 +35,32 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setFormStatus("sending");
+    e.preventDefault();
+    setFormStatus("sending");
 
-  try {
-    const serviceId = "service_p46acta";
-    const templateId = "template_hdedtcs";
-    const publicKey = "mNslJ5eoLJyCPmxdG";
+    try {
+      const serviceId = "service_p46acta";
+      const templateId = "template_hdedtcs";
+      const publicKey = "mNslJ5eoLJyCPmxdG";
 
-    const templateParams = {
-      name: formData.name,        // Matches {{name}} in template
-      email: formData.email,      // Matches {{email}} in template  
-      title: formData.name,       // Matches {{title}} in template subject
-      message: formData.message,  // Matches {{message}} in template body
-    };
+      const templateParams = {
+        name: formData.name, // Matches {{name}} in template
+        email: formData.email, // Matches {{email}} in template
+        title: formData.name, // Matches {{title}} in template subject
+        message: formData.message, // Matches {{message}} in template body
+      };
 
-    await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
-    setFormStatus("sent");
-    setFormData({ name: "", email: "", message: "" });
-    setTimeout(() => setFormStatus("idle"), 5000);
-  } catch (error) {
-    console.error("Failed to send message:", error);
-    setFormStatus("error");
-    setTimeout(() => setFormStatus("idle"), 4000);
-  }
-};
+      setFormStatus("sent");
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setFormStatus("idle"), 5000);
+    } catch (error) {
+      console.error("Failed to send message:", error);
+      setFormStatus("error");
+      setTimeout(() => setFormStatus("idle"), 4000);
+    }
+  };
 
   return (
     <div className="mt-16 sm:mt-24 md:mt-32 mb-16 sm:mb-24 md:mb-32 px-3 sm:px-4 md:px-6 overflow-x-hidden">
@@ -98,7 +98,7 @@ const Contact = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               </div>
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[10px] sm:text-xs font-bold text-purple-300 whitespace-nowrap bg-black/90 px-4 py-1.5 rounded-full border border-purple-500/30 shadow-lg backdrop-blur-sm">
-                "The strongest"
+                &quot;The strongest&quot;
               </div>
             </div>
           </motion.div>
