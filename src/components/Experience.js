@@ -9,8 +9,8 @@ import {
 } from "react-icons/fa";
 
 // Import anime character for the experience section
-import Vegeta from "../../public/images/vegeta.jpg"; // Add your character image
-import Light from "../../public/images/yagami.jpg"; // Add your character image
+import Vegeta from "../../public/images/vegeta.jpg";
+import Light from "../../public/images/yagami.jpg";
 import AnimatedText from "./AnimatedText";
 
 const LiIcon = ({ reference }) => {
@@ -64,7 +64,7 @@ const Details = ({
         className="w-full bg-gradient-to-br from-neutral-900/95 via-neutral-950/95 to-black/95 
           rounded-2xl p-4 sm:p-6 md:p-8 border border-purple-500/20 hover:border-purple-500/40 
           shadow-xl shadow-purple-500/5 hover:shadow-purple-500/20 transition-all duration-300 
-          group backdrop-blur-sm"
+          group backdrop-blur-sm relative"
       >
         {/* Glow effect on hover */}
         <div
@@ -72,22 +72,25 @@ const Details = ({
           rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         />
 
-        {/* Character Avatar - Small floating */}
+        {/* Character Avatar - Small floating - FIXED: Now properly positioned */}
         {character && (
-          <div className="absolute -top-8 -right-8 w-28 h-28 md:w-32 md:h-32 z-20">
+          <div
+            className="absolute -top-4 -right-4 sm:-top-5 sm:-right-5 md:-top-6 md:-right-6 
+            w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 z-20"
+          >
             <div className="relative w-full h-full">
               {/* Glowing aura */}
               <div
-                className={`absolute inset-[-40%] bg-gradient-to-r ${colorMap[color]} rounded-full blur-2xl animate-pulse`}
+                className={`absolute inset-[-50%] bg-gradient-to-r ${colorMap[color]} rounded-full blur-xl sm:blur-2xl animate-pulse`}
               />
 
               {/* Character image */}
-              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white/20 shadow-2xl bg-gradient-to-br from-neutral-900 to-black">
+              <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white/20 shadow-xl bg-gradient-to-br from-neutral-900 to-black">
                 <Image
                   src={character}
-                  alt={characterName}
+                  alt={characterName || "Character"}
                   fill
-                  className="object-contain object-center scale-110"
+                  className="object-cover object-center scale-110"
                 />
                 {/* Inner glow overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -96,7 +99,7 @@ const Details = ({
           </div>
         )}
 
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2 pr-14 sm:pr-16 md:pr-20">
           <span className="text-xs sm:text-sm font-medium text-purple-400 bg-purple-500/10 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-purple-500/20">
             <FaBriefcase className="inline mr-1 w-2 h-2 sm:w-3 sm:h-3" />
             Experience
@@ -117,7 +120,7 @@ const Details = ({
 
         <h3
           className="capitalize font-bold text-lg sm:text-xl md:text-2xl text-white group-hover:text-purple-400 
-          transition-colors duration-300"
+          transition-colors duration-300 pr-14 sm:pr-16 md:pr-20"
         >
           {position}
           {company && (
@@ -125,7 +128,7 @@ const Details = ({
           )}
         </h3>
 
-        <div className="flex flex-wrap items-center gap-2 sm:gap-4 mt-1 sm:mt-2">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-4 mt-1 sm:mt-2 pr-14 sm:pr-16 md:pr-20">
           <span className="flex items-center gap-1 text-xs sm:text-sm text-neutral-400">
             <FaCalendarAlt className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-purple-400" />
             {time}
@@ -138,7 +141,7 @@ const Details = ({
 
         <p
           className="font-medium w-full text-xs sm:text-sm md:text-base text-neutral-300 
-          leading-relaxed mt-2 sm:mt-3"
+          leading-relaxed mt-2 sm:mt-3 pr-14 sm:pr-16 md:pr-20"
         >
           {work}
         </p>
@@ -161,7 +164,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="mt-24 sm:mt-32 md:mt-32 mb-16 sm:mb-24 md:mb-32 px-3 sm:px-4 md:px-6">
+    <div className="mt-24 sm:mt-32 md:mt-32 mb-16 sm:mb-24 md:mb-32 px-3 sm:px-4 md:px-6 overflow-x-hidden">
       {/* Header Section */}
       <div className="max-w-5xl mx-auto text-center mb-12 sm:mb-16 md:mb-20">
         <AnimatedText
@@ -169,7 +172,7 @@ const Experience = () => {
           className="font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white 
             tracking-[-1px] sm:tracking-[-2px] mb-3 sm:mb-4 text-center"
         />
-        <p className="text-lg sm:text-xl md:text-2xl text-neutral-400 max-w-2xl mx-auto px-4 text-xl text-white/80">
+        <p className="text-lg sm:text-xl md:text-2xl text-neutral-400 max-w-2xl mx-auto px-4 text-white/80">
           My professional journey in mobile & web development
         </p>
       </div>
@@ -197,11 +200,11 @@ const Experience = () => {
           <Details
             position="Junior React Native Developer"
             company="Kreative Nomads"
-            // companyLink="https://kreativenomads.com"
             time="Sep 2024 - Feb 2025"
             address="Lahore, Pakistan | Remote"
             work="Accelerated development velocity by 20% by designing and engineering a modular repository of 15+ reusable, cross-platform UI components. Optimized mobile application performance across iOS and Android ecosystems, translating complex UI/UX wireframes into responsive production code. Collaborated with cross-functional backend teams to seamlessly integrate RESTful APIs and streamline mobile user experiences. Championed clean code practices and robust state management workflows to ensure predictable, scalable data flows."
             character={Vegeta}
+            characterName="Vegeta"
             color="blue"
           />
 
@@ -214,6 +217,7 @@ const Experience = () => {
             address="Rawalpindi, Pakistan | On-Site"
             work="Enhanced digital accessibility and cross-browser compatibility by deploying 100% responsive user interfaces using React.js for full-stack web applications. Boosted application stability and backend performance under simulated traffic by developing, testing, and maintaining secure server-side REST APIs with Node.js and Express.js. Minimized technical debt by architecting clean, reusable frontend components, facilitating easier feature scalability for the core engineering team. Maximized data integrity by managing structured schema integrations within MongoDB databases to support dynamic application features."
             character={Light}
+            characterName="Light Yagami"
             color="red"
           />
         </ul>
@@ -228,14 +232,14 @@ const Experience = () => {
       >
         <div
           className="inline-block px-4 sm:px-6 md:px-8 py-3 sm:py-4 
-    bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full 
-    border border-purple-500/20"
+          bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full 
+          border border-purple-500/20"
         >
           <span className="text-xs sm:text-sm md:text-base text-neutral-400">
             🚀 Every experience shapes the journey —
             <span className="text-purple-400 font-semibold">
               {" "}
-              {"Let's build something legendary together"}
+              Let&apos;s build something legendary together
             </span>
           </span>
         </div>

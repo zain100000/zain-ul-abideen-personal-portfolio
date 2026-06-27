@@ -70,7 +70,6 @@ export default function Home() {
                     download
                   >
                     Resume
-                    <LinkArrow className="w-3 h-3 transition-transform group-hover:-rotate-45" />
                   </Link>
 
                   <Link
