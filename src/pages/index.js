@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Muhammad Zain-ul-Abideen - Junior Mobile Developer</title>
+        <title>MZA Portfolio - Developer</title>
         <meta
           name="description"
           content="Junior Mobile Application Developer with expertise in React Native and MERN stack"
