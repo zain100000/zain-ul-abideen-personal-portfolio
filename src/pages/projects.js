@@ -14,7 +14,7 @@ import {
 
 // Import your project images
 import NovaNotes from "../../public/projects/proj1.jpg";
-import TheHope from "../../public/projects/proj2.jpg";
+import WhiteBear from "../../public/projects/proj2.jpg";
 import CoffeeSpot from "../../public/projects/proj3.jpg";
 
 // Import anime character images
@@ -272,7 +272,7 @@ const Project = ({
 
         {tech && tech.length > 0 && (
           <div className="flex flex-wrap gap-1 sm:gap-1.5 mt-1.5 sm:mt-2">
-            {tech.slice(0, 4).map((t, i) => (
+            {tech.slice(0, 10).map((t, i) => (
               <span
                 key={i}
                 className="text-[8px] sm:text-[9px] md:text-[10px] px-1.5 sm:px-2 py-0.5 sm:py-0.5 bg-neutral-800/50 border border-neutral-700 rounded-full text-neutral-400"
@@ -280,11 +280,6 @@ const Project = ({
                 {t}
               </span>
             ))}
-            {tech.length > 4 && (
-              <span className="text-[8px] sm:text-[9px] md:text-[10px] px-1.5 sm:px-2 py-0.5 text-neutral-500">
-                +{tech.length - 4}
-              </span>
-            )}
           </div>
         )}
 
@@ -393,25 +388,25 @@ export default function Projects() {
               <div className="h-px flex-1 bg-gradient-to-l from-purple-500/50 to-transparent" />
             </div>
 
-            {/* Projects Grid - The Hope + Coming Soon */}
+            {/* Projects Grid*/}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
-              {/* The Hope - First Project */}
+              {/* White Bear - Personal Dashboard */}
               <Project
-                type="Full-Stack Wellness Platform"
-                icon="💚"
-                img={TheHope}
-                title="The Hope"
-                description="A comprehensive cross-platform wellness application featuring real-time habit building, mood tracking, yoga guidance, and secure content delivery. Includes a specialized React.js web-based super admin panel for monitoring active user metrics, system content ingestion, and analytics. Features end-to-end authentication with secure user registration, encrypted login, and automated password recovery."
-                github="https://github.com/zain100000/The_Hope"
-                // link="https://the-hope-demo.com"
+                type="Full-Stack Productivity Platform"
+                icon="🐻‍❄️"
+                img={WhiteBear}
+                title="White Bear"
+                description="A minimalist all-in-one personal dashboard designed for daily lifestyle optimization. Features an integrated system combining short/long-term goal management, persistent habit streak tracking, secure markdown-based reflection journals, dynamic todo checklists, and an ai automated analytics suite for visualizing execution trends."
+                github="https://github.com/zain100000/WhiteBear"
+                // link="https://white-bear-privacy.netlify.app/"
                 date="2026"
                 tech={[
                   "React Native",
                   "Redux Toolkit",
-                  "Node.js",
-                  "Express.js",
+                  "Node Js",
+                  "Express Js",
                   "MongoDB",
-                  "React.js",
+                  "Redis",
                   "REST APIs",
                 ]}
                 character={Johan}
