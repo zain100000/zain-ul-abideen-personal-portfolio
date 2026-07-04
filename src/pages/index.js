@@ -11,12 +11,21 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MZA Portfolio - Developer</title>
+        <title>MZA - React Native Developer</title>
         <meta
-          name="description"
-          content="Junior Mobile Application Developer with expertise in React Native and MERN stack"
+          property="og:image"
+          content="https://zain-ul-abideen-personal-portfolio.vercel.app/profile/profile_pic.jpg"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="MZA - React Native Developer" />
+        <meta
+          property="og:description"
+          content="I build React Native applications with clean UI, smooth performance, and cross-platform consistency. Explore my work focused on mobile app development, component-driven architecture, and scalable user experiences."
+        />
+        <meta
+          property="og:url"
+          content="https://zain-ul-abideen-personal-portfolio.vercel.app/"
+        />
+        <meta property="og:type" content="website" />
       </Head>
 
       <TransitionEffect />
