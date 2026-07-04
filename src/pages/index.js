@@ -15,7 +15,7 @@ export default function Home() {
           property="og:image"
           content="https://zain-ul-abideen-personal-portfolio.vercel.app/background.jpg?v=1"
         />
-        <meta property="og:title" content="MZA - React Native Developer" />
+        <meta property="og:title" content="Muhammad Zain Ul Abideen - React Native Developer" />
         <meta
           property="og:description"
           content="I build React Native applications with clean UI, smooth performance, and cross-platform consistency. Explore my work focused on mobile app development, component-driven architecture, and scalable user experiences."
