@@ -3,7 +3,6 @@ import Head from "next/head";
 import TransitionEffect from "@/components/TransitionEffect";
 import profilePic from "../../public/profile/profile_pic.jpg";
 import AnimatedText from "@/components/AnimatedText";
-import { LinkArrow } from "@/components/Icons";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -14,7 +13,7 @@ export default function Home() {
         <title>MZA - React Native Developer</title>
         <meta
           property="og:image"
-          content="https://zain-ul-abideen-personal-portfolio.vercel.app/public/profile/profile_pic.jpg"
+          content="https://zain-ul-abideen-personal-portfolio.vercel.app/images/logo.png"
         />
         <meta property="og:title" content="MZA - React Native Developer" />
         <meta
