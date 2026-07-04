@@ -13,7 +13,7 @@ export default function Home() {
         <title>MZA - React Native Developer</title>
         <meta
           property="og:image"
-          content="https://zain-ul-abideen-personal-portfolio.vercel.app/profile/background.jpg"
+          content="https://zain-ul-abideen-personal-portfolio.vercel.app/background.jpg?v=1"
         />
         <meta property="og:title" content="MZA - React Native Developer" />
         <meta
