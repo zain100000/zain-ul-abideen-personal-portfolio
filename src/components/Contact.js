@@ -63,7 +63,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-16 sm:mt-24 md:mt-32 mb-16 sm:mb-24 md:mb-32 px-3 sm:px-4 md:px-6 overflow-x-hidden">
+    <div className="mt-20 sm:mt-24 md:mt-32 mb-16 sm:mb-24 md:mb-32 px-3 sm:px-4 md:px-6 overflow-x-hidden">
       {/* Header Section */}
       <div className="max-w-5xl mx-auto text-center mb-12 sm:mb-16 md:mb-20">
         <AnimatedText
