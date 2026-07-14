@@ -182,7 +182,7 @@ const FeaturedProject = ({
                 hover:text-purple-300 transition-all duration-300 cursor-pointer z-30 relative"
             >
               <FaExternalLinkAlt className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-4 md:h-4" />{" "}
-              <span className="hidden xs:inline">Live Demo</span>
+              <span className="xs:inline">Live Demo</span>
             </a>
           )}
         </div>
