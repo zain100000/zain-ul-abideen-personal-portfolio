@@ -139,11 +139,10 @@ const Skills = () => {
       className="relative w-screen h-screen overflow-hidden bg-black"
     >
       {/* ===== Background ===== */}
-      <div className="absolute inset-0 opacity-20 sm:opacity-30">
+      <div className="absolute inset-0 opacity-20 sm:opacity-50">
         <Image
           src={Shenron}
           alt="Shenron"
-          fill
           className="object-cover"
           priority
         />

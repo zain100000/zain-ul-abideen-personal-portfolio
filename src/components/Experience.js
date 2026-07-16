@@ -11,6 +11,7 @@ import {
 // Import anime character for the experience section
 import Vegeta from "../../public/images/vegeta.jpg";
 import Light from "../../public/images/yagami.jpg";
+import Gojo from "../../public/images/gojo.jpg";
 import AnimatedText from "./AnimatedText";
 
 const LiIcon = ({ reference }) => {
@@ -196,13 +197,26 @@ const Experience = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-2 sm:ml-3 md:ml-4">
+          {/* Mobile Application Developer Internee - Spark Solutionz */}
+          <Details
+            position="React Native Internee"
+            company="Spark Solutionz"
+            companyLink="https://www.linkedin.com/company/spark-solutionz/"
+            time="July 2026 - Present"
+            address="Sargodha, Pakistan | On-Site"
+            work="Accelerated development velocity by 20% by designing and engineering a modular repository of 15+ reusable, cross-platform UI components. Optimized mobile application performance across iOS and Android ecosystems, translating complex UI/UX wireframes into responsive production code. Collaborated with cross-functional backend teams to seamlessly integrate RESTful APIs and streamline mobile user experiences. Championed clean code practices and robust state management workflows to ensure predictable, scalable data flows."
+            character={Gojo}
+            characterName="Goku Black"
+            color="blue"
+          />
+
           {/* Junior Mobile Application Developer - Kreative Nomads */}
           <Details
             position="Junior React Native Developer"
             company="Kreative Nomads"
             time="Sep 2024 - Feb 2025"
             address="Lahore, Pakistan | Remote"
-            work="Accelerated development velocity by 20% by designing and engineering a modular repository of 15+ reusable, cross-platform UI components. Optimized mobile application performance across iOS and Android ecosystems, translating complex UI/UX wireframes into responsive production code. Collaborated with cross-functional backend teams to seamlessly integrate RESTful APIs and streamline mobile user experiences. Championed clean code practices and robust state management workflows to ensure predictable, scalable data flows."
+            work="Developed and deployed 2+ cross-platform mobile applications for iOS and Android using React Native. Implemented Redux state management and optimized app performance, reducing load times by 30%. Integrated Firebase for real-time data synchronization and implemented push notifications. Conducted code reviews and mentored junior developers on best practices for component reusability and testing methodologies."
             character={Vegeta}
             characterName="Vegeta"
             color="blue"
